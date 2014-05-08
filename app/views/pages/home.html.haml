@@ -1,2 +1,181 @@
-%h1 Pages#home
-%p Find me in app/views/pages/home.html.erb
+.container
+  / begin header
+  .header-wrapper.home-background.clearfix
+    %header
+      %h1.title
+        %a{:href => "http://demo.s5themes.com/sunrise", :title => "Sunrise"}
+          %img{:alt => "Sunrise", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/logo.png"}
+      %span.description Just another Site5 Themes Demo Site
+      / begin nav
+      .nav-wrapper
+        %nav
+          %ul#main.main-nav.sf-menu.sf-js-enabled.sf-shadow
+            %li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-4
+              %a{:href => "http://demo.s5themes.com/sunrise/"} Home
+            %li#menu-item-23.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23
+              %a{:href => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
+              %ul.sub-menu{:style => "display: none; visibility: hidden;"}
+                %li#menu-item-30.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-30
+                  %a{:href => "http://demo.s5themes.com/sunrise/menus/breakfast/"} Breakfast
+                %li#menu-item-31.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-31
+                  %a{:href => "http://demo.s5themes.com/sunrise/menus/deserts/"} Deserts
+                %li#menu-item-32.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-32
+                  %a{:href => "http://demo.s5themes.com/sunrise/menus/salads/"} Salads
+                %li#menu-item-56.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-56
+                  %a{:href => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} Drinks
+            %li#menu-item-26.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-26
+              %a{:href => "http://demo.s5themes.com/sunrise/blog/"} Blog
+            %li#menu-item-67.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-67
+              %a{:href => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+            %li#menu-item-29.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-29
+              %a{:href => "http://demo.s5themes.com/sunrise/contact/"} Contact
+          %select
+            %option{:selected => "selected", :value => ""} Select Page...
+            %option{:value => "http://demo.s5themes.com/sunrise/"} Home
+            %option{:value => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/breakfast/"} - Breakfast
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/deserts/"} - Deserts
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/salads/"} - Salads
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} - Drinks
+            %option{:value => "http://demo.s5themes.com/sunrise/blog/"} Blog
+            %option{:value => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+            %option{:value => "http://demo.s5themes.com/sunrise/contact/"} Contact
+      / end nav
+      %ul.social
+        %li
+          %a.facebook{:href => "#", :title => "Facebook"} Facebook
+        %li
+          %a.twitter{:href => "#", :title => "Twitter"} Twitter
+        %li
+          %a.youtube{:href => "#", :title => "Youtube"} Youtube
+        %li
+          %a.gplus{:href => "#", :title => "Google+"} Google+
+        %li
+          %a.skype{:href => "#", :title => "Skype"} Skype
+        %li
+          %a.rss{:href => "http://demo.s5themes.com/sunrise/feed/rss/", :title => "RSS"}
+      .slogan.block
+        %h2 Welcome to SUNRISE PUB!
+        %p The place you want to be with your friends
+      .clear
+  / end header
+  .promo
+    %section.block.grid4
+      .col
+        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_coffee.png"}
+          %h3 Imported coffee
+          %p Checkout our various tyes of imported coffee.
+      .col
+        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_music.png"}
+          %h3 Great Music
+          %p Our DJs will entertain you like never before.
+      .col
+        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_food.png"}
+          %h3 Finest Cuisine
+          %p From Italian to Tex-Mex, you will find all types of food
+      .col
+        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_service.png"}
+          %h3 Nice Staff
+          %p You will never forget our smile and professional attitude.
+  %section.featured.block.grid3
+    %h2 Featured
+    .col
+      .post-thumb-wrap
+        %img.post-thumb.wp-post-image{:alt => "Disco!", :height => "300", :src => "http://demo.s5themes.com/sunrise/files/2013/08/nightlife-q-c-1107-1019-2-300x300.jpg", :width => "300"}       %h3.post-title
+        %a{:href => "http://demo.s5themes.com/sunrise/vivamus-sed-vestibulum-tortor/"} Vivamus sed vestibulum tortor
+      .post-content
+        %p
+          Donec vel sem condimentum, interdum lacus nec, vulputate ante. Curabitur vulputate quis elit sit amet
+          %a.post_read_more{:href => "http://demo.s5themes.com/sunrise/vivamus-sed-vestibulum-tortor/"} Read More
+    .col
+      .post-thumb-wrap
+        %img.post-thumb.wp-post-image{:alt => "Wall of fame", :height => "300", :src => "http://demo.s5themes.com/sunrise/files/2013/08/nightlife-q-c-1107-1019-6-300x300.jpg", :width => "300"}       %h3.post-title
+        %a{:href => "http://demo.s5themes.com/sunrise/quisque-at-tristique-metus/"} Quisque at tristique metus
+      .post-content
+        %p
+          Suspendisse placerat justo non ante condimentum, eu feugiat dolor luctus. Aliquam cursus lorem mi, ac
+          %a.post_read_more{:href => "http://demo.s5themes.com/sunrise/quisque-at-tristique-metus/"} Read More
+    .col
+      .post-thumb-wrap
+        %img.post-thumb.wp-post-image{:alt => "Tom is on fire!", :height => "300", :src => "http://demo.s5themes.com/sunrise/files/2013/08/nightlife-q-c-1105-793-1-300x300.jpg", :width => "300"}       %h3.post-title
+        %a{:href => "http://demo.s5themes.com/sunrise/maecenas-congue-ipsum-lorem/"} Maecenas congue ipsum lorem
+      .post-content
+        %p
+          Aenean feugiat justo risus, vitae cursus leo ultrices sit amet. Integer non felis imperdiet, blandit
+          %a.post_read_more{:href => "http://demo.s5themes.com/sunrise/maecenas-congue-ipsum-lorem/"} Read More
+  .clear
+  .google-map
+    %a.map-toggle.expand{:href => "#map"}
+      %span.show Show Map
+      %span.hide Hide Map
+    #map
+      %iframe{:height => "100%", :src => "http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;aq=3&amp;oq=GOOGLE&amp;sll=37.0625,-95.677068&amp;sspn=55.849851,135.263672&amp;ie=UTF8&amp;hq=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;hnear=&amp;radius=15000&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=1017478923201951099&amp;ll=37.422114,-122.083856&amp;output=embed", :width => "100%"}
+  / begin footer
+  %footer
+    .footer_widgets.block.grid4.clearfix
+      .footer_widget.col
+        %h3.widget-title Recent Posts
+        %ul
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/aliquam-erat-volutpat/"} Aliquam erat volutpat
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/quisque-at-tristique-metus/"} Quisque at tristique metus
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/maecenas-congue-ipsum-lorem/"} Maecenas congue ipsum lorem
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/vivamus-sed-vestibulum-tortor/"} Vivamus sed vestibulum tortor
+      .footer_widget.col
+        %h3.widget-title Recent Comments
+        %ul#recentcomments
+          %li.recentcomments
+            %a.url{:href => "http://www.google.com", :rel => "external nofollow"} Peter Johnson
+            on
+            %a{:href => "http://demo.s5themes.com/sunrise/aliquam-erat-volutpat/#comment-8"} Aliquam erat volutpat
+          %li.recentcomments
+            %a.url{:href => "http://www.google.com", :rel => "external nofollow"} Peter Johnson
+            on
+            %a{:href => "http://demo.s5themes.com/sunrise/aliquam-erat-volutpat/#comment-7"} Aliquam erat volutpat
+          %li.recentcomments
+            John Smith on
+            %a{:href => "http://demo.s5themes.com/sunrise/quisque-at-tristique-metus/#comment-6"} Quisque at tristique metus
+          %li.recentcomments
+            John Smith on
+            %a{:href => "http://demo.s5themes.com/sunrise/aliquam-erat-volutpat/#comment-5"} Aliquam erat volutpat
+          %li.recentcomments
+            John Smith on
+            %a{:href => "http://demo.s5themes.com/sunrise/aliquam-erat-volutpat/#comment-4"} Aliquam erat volutpat
+      .footer_widget.col
+        %h3.widget-title Archives
+        %ul
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/2013/08/"} August 2013
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/2013/07/"} July 2013
+          %li
+            %a{:href => "http://demo.s5themes.com/sunrise/2013/05/"} May 2013
+      .footer_widget.col
+        %h3.widget-title About
+        .textwidget Nulla et turpis congue ipsum pulvinar pellentesque at at orci. Phasellus in sem eros. Cras aliquam, tellus sed gravida interdum, mi augue pellentesque turpis, at pharetra tortor ligula vel dui. Vestibulum in ornare arcu.
+  / end footer
+  / begin .copyright
+  .copyright
+    / Created by <a href="http://www.s5themes.com/">Site5 WordPress Themes</a>. Experts in <a href="http://gk.site5.com/t/642">WordPress Hosting</a>.
+    Powered by
+    %a{:href => "http://www.wordpress.org"} WordPress
+    | Built by
+    %a{:href => "http://gk.site5.com/t/642"} S5 WordPress Themes
+    %br
+      %a{:href => "http://gk.site5.com/t/642"}
+        Expert WordPress Hosting from Site5 - Try us
+        free for 1 month!
+  / end .copyright
+
+
+
+
+
+
+
+
+/ %h1 Pages#home
+/ %p Find me in app/views/pages/home.html.erb
