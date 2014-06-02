@@ -177,7 +177,10 @@ footer, header, nav, section, audio, video {
 	display: block;
 }
 
-a img {border: 0;}
+a img {
+	border: 0;
+	border-radius: 40px;
+}
 
 
 
@@ -323,7 +326,7 @@ a:hover {
 
 
 .home-background {
-	background-image: url(img/homebackground.jpg);
+	background-image: url(homebackground.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 200px;
@@ -333,7 +336,7 @@ a:hover {
 
 .header-wrapper {
 	background: #333;
-	background-image: url(img/homebackground.jpg);
+	background-image: url(homebackground.jpg)
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 200px;
@@ -367,7 +370,7 @@ header h1.title span {
 
 .slogan {
 	/*background: rgba(137, 158, 48, 0.5);*/
-	background: url(img/bg_slogan.png) top left repeat;
+	background: url(bg_slogan.png) top left repeat;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -387,8 +390,10 @@ header h1.title span {
 	font-size: 34px;
 	font-weight: 100;
 }
+.social li a:hover {
+    opacity: 0.9;
 
-
+}
 
 .social {
     margin: 0;
@@ -408,34 +413,13 @@ header h1.title span {
     width: 36px;
     height: 36px;
     margin-top:0px;
-    background: url(img/social.png) no-repeat;
+    background: url(social.png) no-repeat;
     text-indent: -999em;
     opacity: 0.5;
-}
-.social li a:hover {
-	opacity: 0.9;
-}
-.social li a.twitter {
-    background-position: 0px 0;
 }
 .social li a.facebook {
     background-position: -61px 0;
 }
-.social li a.gplus {
-    background-position: -121px 0;
-}
-.social li a.youtube {
-    background-position: -177px 0;
-}
-.social li a.rss {
-    background-position: -242px 0;
-}
-.social li a.skype {
-    background-position: -304px 0;
-}
-
-
-
 /************************ Footer ************************/
 footer {
 	clear: both;
@@ -492,7 +476,7 @@ footer {
 
 }
 .nav-wrapper {
-	background: url(img/bg_nav.png) top left repeat;
+	background: url(bg_nav.png) top left repeat;
 	padding: 3px 0;
 	margin-top: 20px;
 }
@@ -537,7 +521,7 @@ nav ul li.active a {
 /************************ Nav Submenu ************************/
 ul.sub-menu {
 	position: absolute;
-	background: url(img/bg_nav.png) top left repeat;
+	background: url(bg_nav.png) top left repeat;
 	margin-top: 4px;
 	margin-left: -15px;
 	width: 250px;
@@ -613,7 +597,7 @@ section.main h1 {
 
 /************************ Homepage ************************/
 .promo {
-	background-image: url(img/bg_diamond.png);
+	background-image: url(bg_diamond.png);
 	padding: 20px 0;
 }
 .promo .col {
@@ -662,7 +646,7 @@ a.comment-reply-link {
 	font-size: 16px;
 	font-weight: bold;
 	text-shadow:1px 1px rgba(0,0,0, .5);
-	background: #D93600 url(img/bg_button.png) 50% 50% repeat-x;
+	background: #D93600 url(bg_button.png) 50% 50% repeat-x;
 	display: block;
 	width: 200px;
 	border:0;
@@ -695,7 +679,7 @@ a.comment-reply-link {
 
 
 .post-thumb-wrap {
-	background: url(img/pattern1.png) top left repeat;
+	background: url(pattern1.png) top left repeat;
 	position: relative;
 	overflow: hidden;
 	padding: 15px;
@@ -1196,7 +1180,7 @@ nav#comment-nav {line-height: 12px;}
 	margin-right:7px;
 	color:#fefefe;
 	text-shadow:none;
-	background:url(images/bk_dropcap3.png) 0 0 no-repeat !important;
+	background:url(bk_dropcap3.png) 0 0 no-repeat !important;
 }
 
 /************************ Responsive Navigation ************************/
@@ -1616,3 +1600,18 @@ nav select {
 	width: 100%;
 	height: 400px;
 }
+
+.home-background {
+    background-attachment: fixed;
+    background-image: url("bg_1.png");
+    background-size: cover;
+}
+
+
+/*html { 
+  background: url(bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/

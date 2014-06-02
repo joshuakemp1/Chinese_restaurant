@@ -3,9 +3,8 @@
   .header-wrapper.home-background.clearfix
     %header
       %h1.title
-        %a{:href => "http://demo.s5themes.com/sunrise", :title => "Sunrise"}
-          %img{:alt => "Sunrise", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/logo.png"}
-      %span.description Just another Site5 Themes Demo Site
+        %a{:href => "http://localhost:3000/", :title => "Sunrise"}
+          =image_tag "logo.png"
       / begin nav
       .nav-wrapper
         %nav
@@ -13,22 +12,11 @@
             %li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-4
               %a{:href => "http://demo.s5themes.com/sunrise/"} Home
             %li#menu-item-23.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23
-              %a{:href => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
-              %ul.sub-menu{:style => "display: none; visibility: hidden;"}
-                %li#menu-item-30.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-30
-                  %a{:href => "http://demo.s5themes.com/sunrise/menus/breakfast/"} Breakfast
-                %li#menu-item-31.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-31
-                  %a{:href => "http://demo.s5themes.com/sunrise/menus/deserts/"} Deserts
-                %li#menu-item-32.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-32
-                  %a{:href => "http://demo.s5themes.com/sunrise/menus/salads/"} Salads
-                %li#menu-item-56.menu-item.menu-item-type-taxonomy.menu-item-object-menus.menu-item-56
-                  %a{:href => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} Drinks
+              %a{:href => "http://demo.s5themes.com/sunrise/our-menu/"} Menu
             %li#menu-item-26.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-26
-              %a{:href => "http://demo.s5themes.com/sunrise/blog/"} Blog
-            %li#menu-item-67.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-67
-              %a{:href => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+              %a{:href => "http://demo.s5themes.com/sunrise/gallery/"} About
             %li#menu-item-29.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-29
-              %a{:href => "http://demo.s5themes.com/sunrise/contact/"} Contact
+              %a{:href => "http://demo.s5themes.com/sunrise/contact/"} Location
           %select
             %option{:selected => "selected", :value => ""} Select Page...
             %option{:value => "http://demo.s5themes.com/sunrise/"} Home
@@ -40,43 +28,26 @@
             %option{:value => "http://demo.s5themes.com/sunrise/blog/"} Blog
             %option{:value => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
             %option{:value => "http://demo.s5themes.com/sunrise/contact/"} Contact
-      / end nav
       %ul.social
         %li
-          %a.facebook{:href => "#", :title => "Facebook"} Facebook
-        %li
-          %a.twitter{:href => "#", :title => "Twitter"} Twitter
-        %li
-          %a.youtube{:href => "#", :title => "Youtube"} Youtube
-        %li
-          %a.gplus{:href => "#", :title => "Google+"} Google+
-        %li
-          %a.skype{:href => "#", :title => "Skype"} Skype
-        %li
-          %a.rss{:href => "http://demo.s5themes.com/sunrise/feed/rss/", :title => "RSS"}
+          %a.facebook{:href => "https://www.facebook.com/pages/Top-China-Restaurant/116353948389826", :title => "Facebook"} Facebook
+      / end nav
       .slogan.block
-        %h2 Welcome to SUNRISE PUB!
-        %p The place you want to be with your friends
+        %h2 Welcome to TOPS CHINA!
+        %p The best Chinese food in Warrenton!
       .clear
   / end header
   .promo
     %section.block.grid4
       .col
-        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_coffee.png"}
-          %h3 Imported coffee
-          %p Checkout our various tyes of imported coffee.
-      .col
-        %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_music.png"}
-          %h3 Great Music
-          %p Our DJs will entertain you like never before.
       .col
         %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_food.png"}
-          %h3 Finest Cuisine
-          %p From Italian to Tex-Mex, you will find all types of food
+          %h3 Delicious Chinese
+          %p Tops China is the place for authentic Chinese food
       .col
         %img{:alt => "", :src => "http://demo.s5themes.com/sunrise/wp-content/themes/sunrise//img/ico_service.png"}
-          %h3 Nice Staff
-          %p You will never forget our smile and professional attitude.
+          %h3 Family Owned
+          %p You will never forget our smile and great service.
   %section.featured.block.grid3
     %h2 Featured
     .col
@@ -105,11 +76,11 @@
           %a.post_read_more{:href => "http://demo.s5themes.com/sunrise/maecenas-congue-ipsum-lorem/"} Read More
   .clear
   .google-map
-    %a.map-toggle.expand{:href => "#map"}
-      %span.show Show Map
-      %span.hide Hide Map
-    #map
-      %iframe{:height => "100%", :src => "http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;aq=3&amp;oq=GOOGLE&amp;sll=37.0625,-95.677068&amp;sspn=55.849851,135.263672&amp;ie=UTF8&amp;hq=Google,+Amphitheatre+Parkway,+Mountain+View,+CA,+United+States&amp;hnear=&amp;radius=15000&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=1017478923201951099&amp;ll=37.422114,-122.083856&amp;output=embed", :width => "100%"}
+    %a.map-toggle.expand.collapsed{:href => "#map"}
+      %span.show{:style => "display: none;"} Show Map
+      %span.hide{:style => "display: inline;"} Hide Map
+    #map{:style => "display: block;"}
+    %iframe{:height => "100%", :src => "https://www.google.com/maps/place/Top+China+Restaurant/@38.728681,-77.796847,17z/data=!3m1!4b1!4m2!3m1!1s0x89b67c512d0cec07:0xf7e916a9c641138b", :width => "100%"}
   / begin footer
   %footer
     .footer_widgets.block.grid4.clearfix
