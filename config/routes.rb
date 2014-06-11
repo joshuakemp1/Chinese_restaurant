@@ -2,13 +2,13 @@ ChineseRestaurant::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  get "pages/home"
+  match '/home', :to => "pages#home"
 
-  get "pages/about"
+  match '/about', :to => "pages#about"
 
-  get "pages/menu"
+  match '/menu', :to => "pages#menu"
 
-  get "pages/location"
+  match '/location', :to => "pages#location"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

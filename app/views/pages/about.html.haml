@@ -1,3 +1,51 @@
-%h1 About
-
-%p Find me in app/views/pages/about.html.erb
+.container
+  / begin header
+  .header-wrapper.home-background.clearfix
+    %header
+      %h1.title
+        %a{:href => "http://localhost:3000/", :title => "Sunrise"}
+          =image_tag "logo.png"
+      / begin nav
+      .nav-wrapper
+        %nav
+          %ul#main.main-nav.sf-menu.sf-js-enabled.sf-shadow
+            %li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-4
+              %a{:href => "/home", :title => "Home" } Home
+            %li#menu-item-23.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23
+              %a{ :href => "/menu", :title => "Menu" } Menu
+            %li#menu-item-26.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-26
+              %a{:href => "/about", :title => "About" } About
+            %li#menu-item-29.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-29
+              %a{:href => "/location", :title => "Location"} Location
+          %select
+            %option{:selected => "selected", :value => ""} Select Page...
+            %option{:value => "http://demo.s5themes.com/sunrise/"} Home
+            %option{:value => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/breakfast/"} - Breakfast
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/deserts/"} - Deserts
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/salads/"} - Salads
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} - Drinks
+            %option{:value => "http://demo.s5themes.com/sunrise/blog/"} Blog
+            %option{:value => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+            %option{:value => "http://demo.s5themes.com/sunrise/contact/"} Contact
+      %ul.social
+        %li
+          %a.facebook{:href => "https://www.facebook.com/pages/Top-China-Restaurant/116353948389826", :title => "Facebook"} Facebook
+      / end nav
+      .slogan.block
+        %h2 About
+        %p The best Chinese food in Warrenton!
+        %p In 1999, Eddie Tsui wanted to open a restaurant specializing in a unique northern    chinese cuisine.  After deciding on Peking Duck as the specialty, Peking Gourmet Inn was born.  Realizing that store-bought ingredients were not adequate to generate the authentic taste he was seeking, he opted to go the route of growing his own jumbo spring onions, as well as formulating his own recipe for hoisin sauce and hand crafting each pancake.
+        %p Today, we at Peking Gourmet Inn continue to uphold the methods and traditions set forth by its founder, ensuring that delicious and authentic flavor.  We will strive to do our very best so that every experience with Peking Gourmet Inn is an enjoyable one.
+        %br
+          %br
+        If you have any questions, comments or concerns, please feel free to contact us at
+        %a{:href => "mailto: Management@PekingGourmet.com"} Management@PekingGourmet.com
+      .clear
+  / end header
+  .clear
+  .google-map
+    %a.map-toggle.expand.collapsed{:href => "https://www.google.com/maps/place/Top+China+Restaurant/@38.728681,-77.796847,17z/data=!3m1!4b1!4m2!3m1!1s0x89b67c512d0cec07:0xf7e916a9c641138b"} Show Map
+  / begin .copyright
+  .copyright
+    Copyright © 1999-2014 Tops China, Inc. All rights reserved. "Tops China" and related marks are registered trademarks of Tops China, Inc.

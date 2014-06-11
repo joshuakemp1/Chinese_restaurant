@@ -1,2 +1,93 @@
-%h1 Pages#location
-%p Find me in app/views/pages/location.html.erb
+.container
+  / begin header
+  .header-wrapper.home-background.clearfix
+    %header
+      %h1.title
+        %a{:href => "http://localhost:3000/", :title => "Sunrise"}
+          =image_tag "logo.png"
+      / begin nav
+      .nav-wrapper
+        %nav
+          %ul#main.main-nav.sf-menu.sf-js-enabled.sf-shadow
+            %li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-4
+              %a{:href => "/home", :title => "Home" } Home
+            %li#menu-item-23.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23
+              %a{ :href => "/menu", :title => "Menu" } Menu
+            %li#menu-item-26.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-26
+              %a{:href => "/about", :title => "About" } About
+            %li#menu-item-29.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-29
+              %a{:href => "/location", :title => "Location"} Location
+          %select
+            %option{:selected => "selected", :value => ""} Select Page...
+            %option{:value => "http://demo.s5themes.com/sunrise/"} Home
+            %option{:value => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/breakfast/"} - Breakfast
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/deserts/"} - Deserts
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/salads/"} - Salads
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} - Drinks
+            %option{:value => "http://demo.s5themes.com/sunrise/blog/"} Blog
+            %option{:value => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+            %option{:value => "http://demo.s5themes.com/sunrise/contact/"} Contact
+      %ul.social
+        %li
+          %a.facebook{:href => "https://www.facebook.com/pages/Top-China-Restaurant/116353948389826", :title => "Facebook"} Facebook
+      / end nav
+      .slogan.block
+        %h2 Location
+        %section#secondary
+        %h3 Top's China
+        %br
+        %address
+          %span#street_address 7111 Staples Mill Road
+          %br
+            Warrenton, VA
+            20186
+            %span.phone_number (540)216-3880
+        %p.hours
+          %strong
+            %br
+        .schedule
+          %h3 Hours
+          %p
+            %span.schedule_days Sunday:
+            %span.schedule_hours
+              12pm
+              %span.ndash> &ndash;
+              10pm
+          %p
+            %span.schedule_days Monday:
+            %span.schedule_hours
+              10:30am
+              %span.ndash> &ndash;
+              10:30pm
+          %p
+            %span.schedule_days Tuesday:
+            %span.schedule_hours
+              5pm
+              %span.ndash> &ndash;
+              10pm
+          %p
+            %span.schedule_days Wednesday, Thursday:
+            %span.schedule_hours
+              10:30pm
+              %span.ndash> &ndash;
+              10:30pm
+          %p
+            %span.schedule_days Friday, Saturday:
+            %span.schedule_hours
+              10:30pm
+              %span.ndash> &ndash;
+              11pm
+        %ul#credit_cards
+          %li
+            %img{:alt => "VISA", :src => "/images/themes/global/visa_sm.jpg?1402453611"}/
+          %li
+            %img{:alt => "MasterCard", :src => "/images/themes/global/mastercard_sm.jpg?1402453611"}/
+      .clear
+  / end header
+  .clear
+  .google-map
+    %a.map-toggle.expand.collapsed{:href => "https://www.google.com/maps/place/Top+China+Restaurant/@38.728681,-77.796847,17z/data=!3m1!4b1!4m2!3m1!1s0x89b67c512d0cec07:0xf7e916a9c641138b"} Show Map
+  / begin .copyright
+  .copyright
+    Copyright © 1999-2014 Tops China, Inc. All rights reserved. "Tops China" and related marks are registered trademarks of Tops China, Inc.

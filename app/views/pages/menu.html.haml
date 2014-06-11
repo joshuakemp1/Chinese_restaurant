@@ -1,2 +1,102 @@
-%h1 Pages#menu
-%p Find me in app/views/pages/menu.html.erb
+.container
+  / begin header
+  .header-wrapper.home-background.clearfix
+    %header
+      %h1.title
+        %a{:href => "http://localhost:3000/", :title => "Sunrise"}
+          =image_tag "logo.png"
+      / begin nav
+      .nav-wrapper
+        %nav
+          %ul#main.main-nav.sf-menu.sf-js-enabled.sf-shadow
+            %li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-4
+              %a{:href => "/home", :title => "Home" } Home
+            %li#menu-item-23.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23
+              %a{ :href => "/menu", :title => "Menu" } Menu
+            %li#menu-item-26.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-26
+              %a{:href => "/about", :title => "About" } About
+            %li#menu-item-29.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-29
+              %a{:href => "/location", :title => "Location"} Location
+          %select
+            %option{:selected => "selected", :value => ""} Select Page...
+            %option{:value => "http://demo.s5themes.com/sunrise/"} Home
+            %option{:value => "http://demo.s5themes.com/sunrise/our-menu/"} Our Menu
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/breakfast/"} - Breakfast
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/deserts/"} - Deserts
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/salads/"} - Salads
+            %option{:value => "http://demo.s5themes.com/sunrise/menus/drinks-2/"} - Drinks
+            %option{:value => "http://demo.s5themes.com/sunrise/blog/"} Blog
+            %option{:value => "http://demo.s5themes.com/sunrise/gallery/"} Gallery
+            %option{:value => "http://demo.s5themes.com/sunrise/contact/"} Contact
+      %ul.social
+        %li
+          %a.facebook{:href => "https://www.facebook.com/pages/Top-China-Restaurant/116353948389826", :title => "Facebook"} Facebook
+      / end nav
+      .slogan.block
+        %h2 Menu
+        %p The best Chinese food in Warrenton!
+        %br
+        %br
+        %br
+        #content
+          %section#main
+            #menu
+              .menus
+                %h3#menu_16254
+                  Special Comination Plates (with Pork Fried Rice &amp; Egg Roll)
+                %p
+                  C 1. Chicken Chow Mein.................. 6.50
+                  %br
+                    C 2. Shrimp Chow Mein....................6.65
+                    %br
+                      C 3. Roast Pork Egg Foo Young........6.65
+                      %br
+                        C 4. Shrimp with Lobster Sauce........6.95
+                        %br
+                          C 5. Roast Pork with Chinese Veg.... 6.50
+                          %br
+                            C 6. Roast Pork Lo Mein...................6.50
+                            %br
+                              C 7. Sweet &amp; Sour Chicken or Pork..6.50
+                              %br
+                                C 8. B-B-Q Square Ribs......................6.95
+                                %br
+                                  C 9. Pepper Steak................................6.95
+                                  %br
+                                    C 10. Beef with Chinese Veg............... 6.95
+                                    %br
+                                      C 11. Beef with Broccoli........................6.95
+                                      %br
+                                        C 12. Moo Goo Gai Pan.......................6.65
+                                        %br
+                                          C 13. Chicken with Broccoli.................6.65
+                                          %br
+                                            C 14. Chicken with Cashew Nuts........6.65
+                                            %br
+                                              C 15. Shrimp with Chinese Veg............6.95
+                                              %br
+                                                C 16. Shrimp with Broccoli..................6.95
+                                                %br
+                                                  C 17. Szachuan Chicken.......................6.75
+                                                  %br
+                                                    C 18. Chicken with Garlic Sauce..........6.75
+  / end header
+  .promo
+    %section.block.grid4
+      .col
+      .col
+        %img
+          =image_tag "ico_food.png"
+          %h3 Delicious Chinese
+          %p Tops China is the place for authentic Chinese food
+      .col
+        %img
+          =image_tag "ico_service.png"
+          %h3 Family Owned
+          %p You will never forget our smile and great service.
+  .clear
+  .google-map
+    %a.map-toggle.expand.collapsed{:href => "https://www.google.com/maps/place/Top+China+Restaurant/@38.728681,-77.796847,17z/data=!3m1!4b1!4m2!3m1!1s0x89b67c512d0cec07:0xf7e916a9c641138b"} Show Map
+  / begin .copyright
+  .copyright
+    Copyright © 1999-2014 Tops China, Inc. All rights reserved. "Tops China" and related marks are registered trademarks of Tops China, Inc.
