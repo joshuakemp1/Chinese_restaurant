@@ -1290,9 +1290,9 @@ nav select {
     img.blog-thumb {
 		float:none;
 	}
-    nav ul {
+    /*nav ul {
     	display: none;
-    }
+    }*/
     nav select {
 	    display: inline-block;
 	    width: 100%;
@@ -1394,9 +1394,9 @@ nav select {
 		/*width: 420px;
 		padding: 5px 22px 48px;*/
 	}
-    nav ul     {
+   /* nav ul     {
     	display: none;
-    }
+    }*/
     nav select {
 	    display: inline-block;
 	    width: 100%;
